@@ -1,0 +1,23 @@
+{
+  "name": "CP Portal Settings",
+  "doctype": "DocType",
+  "module": "Customer Portal",
+  "issingle": 1,
+  "fields": [
+    {
+      "fieldname": "portal_title",
+      "fieldtype": "Data",
+      "label": "Portal Title",
+      "default": "Customer Portal"
+    },
+    {
+      "fieldname": "doctypes",
+      "fieldtype": "Table",
+      "label": "Configured Doctypes",
+      "options": "CP Portal Doctype"
+    }
+  ],
+  "permissions": [
+    {"role": "System Manager", "read": 1, "write": 1, "create": 1}
+  ]
+}

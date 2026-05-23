@@ -1,0 +1,2 @@
+include pyproject.toml
+recursive-include customer_portal *.json *.js *.css *.html *.txt *.md

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Portal</title>
+    <script type="module" crossorigin src="/assets/customer_portal/portal/assets/index-1ea0a98c.js"></script>
+    <link rel="stylesheet" href="/assets/customer_portal/portal/assets/index-5a0587c7.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+  
+          <script>
+              {% for key in boot %}
+              window["{{ key }}"] = {{ boot[key] | tojson }};
+              {% endfor %}
+          </script>
+          </body>
+          
+</html>
