@@ -1,2 +1,0 @@
-import{bU as r,j as t,l as c}from"./index-1ea0a98c.js";import{c as i}from"./call-46b8c338.js";function u(){const o=new URLSearchParams(document.cookie.split("; ").join("&")).get("user_id");return o&&o!=="Guest"?o:null}const d=r("auth",()=>{const e=t(u()),o=t(window.full_name||""),n=c(()=>!!e.value);async function s(){await i("logout"),window.location.href="/login?redirect-to=/portal"}return{isLoggedIn:n,user:e,fullName:o,logout:s}});export{d as useAuthStore};
-//# sourceMappingURL=auth-53bf84b3.js.map

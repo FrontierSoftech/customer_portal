@@ -1,0 +1,35 @@
+{
+  "name": "dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/assets/customer_portal/dashboard/ && yarn copy-html-entry",
+    "preview": "vite preview",
+    "copy-html-entry": "cp ../customer_portal/public/dashboard/index.html ../customer_portal/www/dashboard.html && cp ../customer_portal/public/dashboard/index.html ../customer_portal/www/portal.html"
+  },
+  "dependencies": {
+    "frappe-ui": "^0.1.278",
+    "pinia": "^3.0.4",
+    "socket.io-client": "^4.5.1",
+    "vue": "^3.5.34",
+    "vue-router": "^4"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.109",
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/node": "^24.12.3",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/tsconfig": "^0.9.1",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^3.4.19",
+    "typescript": "~6.0.2",
+    "unplugin-auto-import": "^21.0.0",
+    "unplugin-icons": "^23.0.1",
+    "unplugin-vue-components": "^32.1.0",
+    "vite": "^8.0.12",
+    "vue-tsc": "^3.2.8"
+  }
+}

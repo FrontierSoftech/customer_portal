@@ -8,14 +8,18 @@ app_license = "MIT"
 add_to_apps_screen = [
     {
         "name": "customer_portal",
-        "logo": "/assets/customer_portal/portal/favicon.svg",
+        "logo": "/assets/customer_portal/dashboard/favicon.svg",
         "title": "Customer Portal",
-        "route": "/portal",
+        "route": "/dashboard",
         "has_permission": "customer_portal.api.portal.has_app_permission",
     }
 ]
 
 website_route_rules = [
+    {
+        "from_route": "/dashboard/<path:app_path>",
+        "to_route": "dashboard",
+    },
     {
         "from_route": "/portal/<path:app_path>",
         "to_route": "portal",
