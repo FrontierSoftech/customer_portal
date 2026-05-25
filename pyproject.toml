@@ -15,6 +15,6 @@ build-backend = "flit_core.buildapi"
 frappe = ">=15.0.0"
 
 [tool.bench.assets]
-build_dir = "./portal"
-out_dir = "./customer_portal/public/portal"
-index_html_path = "./customer_portal/www/portal/index.html"
+build_dir = "./dashboard"
+out_dir = "./customer_portal/public/dashboard"
+index_html_path = "./customer_portal/www/dashboard.html"
