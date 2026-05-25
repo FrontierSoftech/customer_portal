@@ -10,7 +10,7 @@ add_to_apps_screen = [
         "name": "customer_portal",
         "logo": "/assets/customer_portal/dashboard/favicon.svg",
         "title": "Customer Portal",
-        "route": "/dashboard",
+        "route": "/portal",
         "has_permission": "customer_portal.api.portal.has_app_permission",
     }
 ]
